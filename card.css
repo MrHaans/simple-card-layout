@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title,
+.text,
+.card-container {
+  margin-bottom: 12px;
+}
+
+.title {
+  width: 700px;
+  height: 70px;
+  /* background-color: yellow; */
+  margin-top: 60px;
+  margin-bottom: -12px;
+}
+
+.title > h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.text {
+  width: auto;
+  height: 40px;
+  /* background-color: orange; */
+  margin-bottom: -12px;
+}
+
+.text > p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.card-container {
+  width: 100%;
+  height: auto;
+  /* background-color: peachpuff; */
+  padding: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+
+.card {
+  width: 280px;
+  height: 360px;
+  padding: 12px;
+  box-shadow: -10px 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card > img {
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  height: 240px;
+  object-fit: cover;
+  padding: 32px;
+  background-color: #fad9a1;
+}
+
+.card > h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 95%;
+  margin: 8px auto;
+}
+
+.card > p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.button {
+  width: 140px;
+  height: 50px;
+  margin-bottom: 200px;
+}
+
+.button > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 3.2;
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: white;
+  background-color: #6e85b7;
+  border-radius: 5px;
+}
+
+.button > a:hover {
+  background-color: black;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 1480px) {
+  .title {
+    width: 1200px;
+    height: 100px;
+    margin-bottom: -25px;
+    margin-top: 150px;
+  }
+
+  .title > h1 {
+    font-size: 3rem;
+  }
+
+  .text {
+    width: 800px;
+    height: 80px;
+    margin-bottom: -25px;
+  }
+
+  .text > p {
+    font-size: 1.8rem;
+  }
+
+  .card-container {
+    gap: 20px;
+  }
+
+  .card {
+    width: 400px;
+    height: 540px;
+  }
+
+  .card > img {
+    width: 340px;
+    height: 340px;
+  }
+
+  .card > h1 {
+    width: 90%;
+    font-size: 2rem;
+  }
+
+  .card > p {
+    width: 90%;
+    font-size: 1.4rem;
+  }
+
+  .button {
+    width: 220px;
+    height: 80px;
+  }
+
+  .button > a {
+    font-size: 1.5rem;
+    line-height: 3;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    overflow: scroll;
+  }
+
+  .card-container {
+    gap: 18px;
+  }
+
+  .card {
+    width: 250px;
+    height: 340px;
+  }
+
+  .card > img {
+    width: 220px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .text {
+    margin-bottom: 25px;
+  }
+
+  .card-container {
+    flex-flow: wrap;
+    gap: 18px;
+  }
+
+  .card {
+    width: 260px;
+    height: 320px;
+    margin: 0 25px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .title {
+    width: 550px;
+    margin-bottom: -25px;
+  }
+
+  .title > h1 {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    width: 420px;
+    margin-bottom: -8px;
+  }
+
+  .text > p {
+    font-size: 1rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 0;
+    width: 100%;
+    height: 320px;
+  }
+
+  .card > h1,
+  .card > p {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    width: 400px;
+    margin-bottom: 4px;
+  }
+
+  .title > h1 {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    width: 400px;
+    text-align: center;
+    margin-bottom: -8px;
+  }
+
+  .text > p {
+    font-size: 0.76rem;
+  }
+
+  .card {
+    height: 250px;
+  }
+
+  .card > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .card > h1 {
+    width: 150px;
+    font-size: 0.88rem;
+  }
+
+  .card > p {
+    width: 150px;
+    font-size: 0.55rem;
+  }
+
+  .button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .button > a {
+    line-height: 2.5;
+  }
+}
