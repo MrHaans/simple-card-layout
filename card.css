@@ -221,7 +221,7 @@ body {
   }
 
   .title > h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .text {
@@ -230,7 +230,7 @@ body {
   }
 
   .text > p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .card-container {
@@ -257,7 +257,7 @@ body {
   }
 
   .title > h1 {
-    font-size: 1.3rem;
+    font-size: 1.26rem;
   }
 
   .text {
@@ -267,7 +267,7 @@ body {
   }
 
   .text > p {
-    font-size: 0.76rem;
+    font-size: 0.68rem;
   }
 
   .card {
